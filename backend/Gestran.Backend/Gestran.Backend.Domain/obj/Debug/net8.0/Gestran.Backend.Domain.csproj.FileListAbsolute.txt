@@ -1,0 +1,11 @@
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\bin\Debug\net8.0\Gestran.Backend.Domain.deps.json
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\bin\Debug\net8.0\Gestran.Backend.Domain.dll
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\bin\Debug\net8.0\Gestran.Backend.Domain.pdb
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\Gestran.Backend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\Gestran.Backend.Domain.AssemblyInfoInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\Gestran.Backend.Domain.AssemblyInfo.cs
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\Gestran.Backend.Domain.csproj.CoreCompileInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\Gestran.Backend.Domain.dll
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\refint\Gestran.Backend.Domain.dll
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\Gestran.Backend.Domain.pdb
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Domain\obj\Debug\net8.0\ref\Gestran.Backend.Domain.dll
