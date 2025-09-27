@@ -10,11 +10,4 @@
     <ProjectReference Include="..\Gestran.Backend.Domain\Gestran.Backend.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Validations\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>

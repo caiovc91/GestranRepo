@@ -26,8 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
-    <Folder Include="Persistence\Seed\" />
-    <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
 </Project>

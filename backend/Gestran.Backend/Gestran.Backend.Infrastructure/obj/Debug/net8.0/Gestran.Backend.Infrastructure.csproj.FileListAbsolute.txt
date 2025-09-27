@@ -11,6 +11,7 @@ X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructur
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.AssemblyInfoInputs.cache
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.AssemblyInfo.cs
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.csproj.CoreCompileInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.sourcelink.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran..7B5B6770.Up2Date
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.dll
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\refint\Gestran.Backend.Infrastructure.dll
