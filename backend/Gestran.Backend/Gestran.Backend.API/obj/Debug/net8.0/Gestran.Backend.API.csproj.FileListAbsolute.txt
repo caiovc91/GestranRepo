@@ -1,3 +1,11 @@
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.csproj.AssemblyReference.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.GeneratedMSBuildEditorConfig.editorconfig
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.AssemblyInfoInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.AssemblyInfo.cs
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.csproj.CoreCompileInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.MvcApplicationPartsAssemblyInfo.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.sourcelink.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug\net8.0\appsettings.Development.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug\net8.0\appsettings.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug\net8.0\Gestran.Backend.API.staticwebassets.endpoints.json
@@ -152,15 +160,7 @@ X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug\net8.0\Gestran.Backend.Application.pdb
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug\net8.0\Gestran.Backend.Domain.pdb
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\bin\Debug\net8.0\Gestran.Backend.Infrastructure.pdb
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.csproj.AssemblyReference.cache
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\rpswa.dswa.cache.json
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.GeneratedMSBuildEditorConfig.editorconfig
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.AssemblyInfoInputs.cache
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.AssemblyInfo.cs
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.csproj.CoreCompileInputs.cache
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.MvcApplicationPartsAssemblyInfo.cs
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.MvcApplicationPartsAssemblyInfo.cache
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\Gestran.Backend.API.sourcelink.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

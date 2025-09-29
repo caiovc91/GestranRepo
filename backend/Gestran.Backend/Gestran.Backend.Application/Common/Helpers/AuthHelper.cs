@@ -5,7 +5,6 @@ namespace Gestran.Backend.Application.Common.Helpers;
 
 public static class AuthHelper
 {
-    // Simples: converte senha para hashcode (pode usar SHA256 para teste)
     public static string GenerateHash(string password)
     {
         if (string.IsNullOrWhiteSpace(password))
@@ -25,7 +24,7 @@ public static class AuthHelper
         return hash == storedHash;
     }
 
-    // Gera token fictício para testes
+    // Gerador de token fictício para testes
     public static string GenerateFakeToken(Guid userId, string role)
     {
         return Convert.ToBase64String(Encoding.UTF8.GetBytes($"{userId}:{role}:{DateTime.UtcNow.Ticks}"));

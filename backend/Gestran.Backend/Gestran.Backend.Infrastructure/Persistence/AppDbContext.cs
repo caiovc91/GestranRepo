@@ -52,18 +52,13 @@ namespace Gestran.Backend.Infrastructure.Persistence
             {
                 entity.ToTable("CheckListCollections");
                 entity.HasKey(e => e.CollectionId);
-
-                entity.HasMany(e => e.CheckLists)
-                      .WithOne(cl => cl.Collection)
-                      .HasForeignKey(cl => cl.CollectionId)
-                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<CheckList>(entity =>
             {
                 entity.ToTable("CheckLists");
                 entity.HasKey(e => e.Id);
-
+                entity.Property(e => e.CollectionId).IsRequired(false);
                 entity.Property(e => e.CheckListName).IsRequired();
                 entity.Property(e => e.CreationDate).IsRequired();
                 entity.Property(e => e.LastUpdateDate).IsRequired(false);
@@ -77,6 +72,10 @@ namespace Gestran.Backend.Infrastructure.Persistence
                       .WithOne(i => i.CheckList)
                       .HasForeignKey(i => i.CheckListId)
                       .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(e => e.Collection)
+                .WithMany(c => c.CheckLists)
+                .HasForeignKey(e => e.CollectionId)
+                .OnDelete(DeleteBehavior.SetNull);
             });
 
             modelBuilder.Entity<CheckListItem>(entity =>
@@ -84,6 +83,7 @@ namespace Gestran.Backend.Infrastructure.Persistence
                 entity.ToTable("CheckListItems");
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.ItemTypeId).IsRequired();
+                entity.Property(e => e.ItemTypeName).IsRequired();
 
                 entity.Property(e => e.Comments).IsRequired(false);
                 entity.Property<bool?>(e => e.IsChecked).IsRequired(false);

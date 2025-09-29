@@ -14,7 +14,7 @@ namespace Gestran.Backend.Domain.Entities
         public Guid? ExecutedById { get; set; }
         public User? ExecutedBy { get; set; }
 
-        public Guid CollectionId { get; set; }
+        public Guid? CollectionId { get; set; }
         public CheckListCollection? Collection { get; set; }
 
 

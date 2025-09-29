@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Gestran.Backend.Domain\Gestran.Backend.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Mappers\" />
+  </ItemGroup>
+
 </Project>

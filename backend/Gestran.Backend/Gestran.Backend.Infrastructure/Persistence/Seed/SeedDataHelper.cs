@@ -1,4 +1,5 @@
-﻿using Gestran.Backend.Domain.Entities;
+﻿using Gestran.Backend.Application.Common.Helpers;
+using Gestran.Backend.Domain.Entities;
 using Gestran.Backend.Domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace Gestran.Backend.Infrastructure.Persistence.Seed
                 {
                     Id = Guid.NewGuid(),
                     Name = $"Executor{i}",
-                    AccessHashCode = $"exec{i}123",
+                    AccessHashCode = AuthHelper.GenerateHash($"exec@{i}123"),
                     IsAccessActive = true,
                     Role = UserRole.Executor
                 });
@@ -34,7 +35,7 @@ namespace Gestran.Backend.Infrastructure.Persistence.Seed
                 {
                     Id = Guid.NewGuid(),
                     Name = $"Supervisor{i}",
-                    AccessHashCode = $"approver{i}123",
+                    AccessHashCode = AuthHelper.GenerateHash($"sup@{i}123"),
                     IsAccessActive = true,
                     Role = UserRole.Supervisor
                 });

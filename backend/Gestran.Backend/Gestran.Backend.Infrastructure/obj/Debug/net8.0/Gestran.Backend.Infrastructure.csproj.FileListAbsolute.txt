@@ -1,3 +1,9 @@
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.csproj.AssemblyReference.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.AssemblyInfoInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.AssemblyInfo.cs
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.csproj.CoreCompileInputs.cache
+X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.sourcelink.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\bin\Debug\net8.0\Gestran.Backend.Infrastructure.deps.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\bin\Debug\net8.0\Gestran.Backend.Infrastructure.runtimeconfig.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\bin\Debug\net8.0\Gestran.Backend.Infrastructure.dll
@@ -6,12 +12,6 @@ X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructur
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\bin\Debug\net8.0\Gestran.Backend.Domain.dll
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\bin\Debug\net8.0\Gestran.Backend.Application.pdb
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\bin\Debug\net8.0\Gestran.Backend.Domain.pdb
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.csproj.AssemblyReference.cache
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.AssemblyInfoInputs.cache
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.AssemblyInfo.cs
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.csproj.CoreCompileInputs.cache
-X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.sourcelink.json
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran..7B5B6770.Up2Date
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\Gestran.Backend.Infrastructure.dll
 X:\Projects\VS2022\Gestran\backend\Gestran.Backend\Gestran.Backend.Infrastructure\obj\Debug\net8.0\refint\Gestran.Backend.Infrastructure.dll

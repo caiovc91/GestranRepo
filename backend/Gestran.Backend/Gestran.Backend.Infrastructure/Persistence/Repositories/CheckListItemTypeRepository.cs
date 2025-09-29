@@ -31,7 +31,9 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
 
         public async Task<CheckListItemType?> GetCheckListItemTypeAsync(Guid id, CancellationToken ct = default)
         {
-            return await _context.CheckListItemTypes.FirstOrDefaultAsync(c => c.Id == id, ct);
+            return await _context.CheckListItemTypes
+                .AsNoTracking()
+                .FirstOrDefaultAsync(c => c.Id == id, ct);
         }
 
         /// <summary>

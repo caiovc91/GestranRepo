@@ -53,14 +53,37 @@ namespace Gestran.Backend.Infrastructure.Persistence
                     await _context.SaveChangesAsync();
                     _logger.LogInformation("Usuários criados.");
                 }
-
-                if (!await _context.CheckListItemTypes.AnyAsync())
+                else
                 {
-                    var itemTypes = SeedDataHelper.GenerateTestCheckListItemTypes();
-                    _context.CheckListItemTypes.AddRange(itemTypes);
-                    await _context.SaveChangesAsync();
-                    _logger.LogInformation("Criados itens de checklist padrões.");
+                    var seedUsers = SeedDataHelper.GenerateTestUsers();
+                    foreach (var seedUser in seedUsers)
+                    {
+                        var existingUser = await _context.Users
+                            .FirstOrDefaultAsync(u => u.Name == seedUser.Name);
+
+                        if (existingUser != null)
+                        {
+                            existingUser.AccessHashCode = seedUser.AccessHashCode;
+                            existingUser.IsAccessActive = seedUser.IsAccessActive;
+                            existingUser.Role = seedUser.Role;
+
+                        }
+                        else
+                        {
+                            // Caso algum usuário do seed esteja faltando
+                            await _context.Users.AddAsync(seedUser);
+                        }
+                    }
+
+                    if (!await _context.CheckListItemTypes.AnyAsync())
+                    {
+                        var itemTypes = SeedDataHelper.GenerateTestCheckListItemTypes();
+                        _context.CheckListItemTypes.AddRange(itemTypes);
+                        await _context.SaveChangesAsync();
+                        _logger.LogInformation("Criados itens de checklist padrões.");
+                    }
                 }
+                await _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {

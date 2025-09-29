@@ -10,6 +10,6 @@ namespace Gestran.Backend.Application.DTOs
         Guid CollectionId,
         Guid OwnerId,
         string OwnerName,
-        List<CheckListDto> Checklists
+        List<CheckListResponseDto> Checklists
     );
 }

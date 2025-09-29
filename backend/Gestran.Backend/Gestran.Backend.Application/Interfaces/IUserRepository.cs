@@ -5,6 +5,8 @@ namespace Gestran.Backend.Application.Interfaces
     public interface IUserRepository
     {
         public Task<User?> GetUserByNameAndAccessHashAsync(string name, string accessHashCode, CancellationToken ct = default);
+        public Task<User?> GetByNameAsync(string name, CancellationToken ct = default);
         public Task<User?> GetByIdAsync(Guid id, CancellationToken ct = default);
+        public Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken ct = default);
     }
 }

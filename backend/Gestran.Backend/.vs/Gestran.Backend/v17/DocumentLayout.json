@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF2C5E2A-5E49-4DB9-91F5-072331F57344}|Gestran.Backend.Infrastructure\\Gestran.Backend.Infrastructure.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.infrastructure\\persistence\\seed\\seeddatahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF2C5E2A-5E49-4DB9-91F5-072331F57344}|Gestran.Backend.Infrastructure\\Gestran.Backend.Infrastructure.csproj|solutionrelative:gestran.backend.infrastructure\\persistence\\seed\\seeddatahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7090B1F1-FB86-4CB5-BA72-8DA564CD515B}|Gestran.Backend.API\\Gestran.Backend.API.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.api\\controllers\\checklistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7090B1F1-FB86-4CB5-BA72-8DA564CD515B}|Gestran.Backend.API\\Gestran.Backend.API.csproj|solutionrelative:gestran.backend.api\\controllers\\checklistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.application\\handlers\\authhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|solutionrelative:gestran.backend.application\\handlers\\authhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.application\\dtos\\checklistdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|solutionrelative:gestran.backend.application\\dtos\\checklistdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7090B1F1-FB86-4CB5-BA72-8DA564CD515B}|Gestran.Backend.API\\Gestran.Backend.API.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7090B1F1-FB86-4CB5-BA72-8DA564CD515B}|Gestran.Backend.API\\Gestran.Backend.API.csproj|solutionrelative:gestran.backend.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.application\\common\\helpers\\authhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|solutionrelative:gestran.backend.application\\common\\helpers\\authhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|x:\\projects\\vs2022\\gestran\\backend\\gestran.backend\\gestran.backend.application\\services\\checklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB3E400-56C0-4A55-B640-E7DE15025FDE}|Gestran.Backend.Application\\Gestran.Backend.Application.csproj|solutionrelative:gestran.backend.application\\services\\checklistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeedDataHelper.cs",
-              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Infrastructure\\Persistence\\Seed\\SeedDataHelper.cs",
-              "RelativeDocumentMoniker": "Gestran.Backend.Infrastructure\\Persistence\\Seed\\SeedDataHelper.cs",
-              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Infrastructure\\Persistence\\Seed\\SeedDataHelper.cs",
-              "RelativeToolTip": "Gestran.Backend.Infrastructure\\Persistence\\Seed\\SeedDataHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAASAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CheckListDtos.cs",
+              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\DTOs\\CheckListDtos.cs",
+              "RelativeDocumentMoniker": "Gestran.Backend.Application\\DTOs\\CheckListDtos.cs",
+              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\DTOs\\CheckListDtos.cs",
+              "RelativeToolTip": "Gestran.Backend.Application\\DTOs\\CheckListDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:34:34.7Z",
+              "WhenOpened": "2025-09-29T13:46:36.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthHandler.cs",
-              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\Handlers\\AuthHandler.cs",
-              "RelativeDocumentMoniker": "Gestran.Backend.Application\\Handlers\\AuthHandler.cs",
-              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\Handlers\\AuthHandler.cs",
-              "RelativeToolTip": "Gestran.Backend.Application\\Handlers\\AuthHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CheckListController.cs",
+              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.API\\Controllers\\CheckListController.cs",
+              "RelativeDocumentMoniker": "Gestran.Backend.API\\Controllers\\CheckListController.cs",
+              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.API\\Controllers\\CheckListController.cs",
+              "RelativeToolTip": "Gestran.Backend.API\\Controllers\\CheckListController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAvwBoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:33:59.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthHelper.cs",
-              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\Common\\Helpers\\AuthHelper.cs",
-              "RelativeDocumentMoniker": "Gestran.Backend.Application\\Common\\Helpers\\AuthHelper.cs",
-              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\Common\\Helpers\\AuthHelper.cs",
-              "RelativeToolTip": "Gestran.Backend.Application\\Common\\Helpers\\AuthHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:58:12.215Z"
+              "WhenOpened": "2025-09-29T13:45:54.923Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Gestran.Backend.API\\Controllers\\AuthController.cs",
-              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Gestran.Backend.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Title": "CheckListService.cs",
+              "DocumentMoniker": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\Services\\CheckListService.cs",
+              "RelativeDocumentMoniker": "Gestran.Backend.Application\\Services\\CheckListService.cs",
+              "ToolTip": "X:\\Projects\\VS2022\\Gestran\\backend\\Gestran.Backend\\Gestran.Backend.Application\\Services\\CheckListService.cs",
+              "RelativeToolTip": "Gestran.Backend.Application\\Services\\CheckListService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAEwEIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:55:17.734Z"
+              "WhenOpened": "2025-09-29T12:31:14.106Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,5 +1,7 @@
-﻿using Gestran.Backend.Application.DTOs;
-using Gestran.Backend.Application.Common.Helpers;
+﻿using Gestran.Backend.Application.Common.Helpers;
+using Gestran.Backend.Application.DTOs;
+using Gestran.Backend.Application.Interfaces.Services;
+using Gestran.Backend.Application.Services;
 using Gestran.Backend.Domain.Entities;
 using Gestran.Backend.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
@@ -11,22 +13,23 @@ namespace Gestran.Backend.API.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        public AuthController(AppDbContext context) => _context = context;
+        private readonly IUserService _userService;
+
+        public AuthController(IUserService userService) { _userService = userService; }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequestDto loginDto)
+        public async Task<IActionResult> Login(LoginRequestDto request)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Name == loginDto.Name);
+            var user = await _userService.ValidateLoginAsync(request.Name, request.Password);
+            if (user == null || !user.IsAccessActive)
+                return Unauthorized("Acesso inválido ou inativo");
 
-            if (user == null || !AuthHelper.VerifyHash(loginDto.Password, user.AccessHashCode) || !user.IsAccessActive)
-                return Unauthorized(new { message = "Login inválido ou desativado." });
-
+            // Gera token
             var token = AuthHelper.GenerateFakeToken(user.Id, user.Role.ToString());
 
+            // Retorna token e info básica do usuário
             var userDto = new UserDto(user.Id, user.Name, user.Role.ToString(), user.IsAccessActive);
-
-            return Ok(new { user = userDto, token });
+            return Ok(new { Token = token, User = userDto });
         }
 
     }

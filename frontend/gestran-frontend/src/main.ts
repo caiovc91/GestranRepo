@@ -1,6 +1,9 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import 'zone.js';
+import { Router } from './app/router';
+import { SessionService } from './app/services/session.service';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+// Inicializa a aplicação
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('popstate', () => Router.load(window.location.pathname));
+  Router.load(window.location.pathname);
+});

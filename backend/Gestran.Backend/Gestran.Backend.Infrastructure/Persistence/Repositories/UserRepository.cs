@@ -24,6 +24,8 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
         public async Task<User?> GetUserByNameAndAccessHashAsync(string name, string accessHashCode, CancellationToken ct = default)
             => await _context.Users.FirstOrDefaultAsync(u => u.Name == name && u.AccessHashCode == accessHashCode && u.IsAccessActive, ct);
 
+        public async Task<User?> GetByNameAsync(string name, CancellationToken ct = default) => await _context.Users.FirstOrDefaultAsync(u => u.Name == name, ct);
+
         /// <summary>
         /// Busca usuário por ID apenas.
         /// </summary>
@@ -32,5 +34,8 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
         /// <returns></returns>
         public async Task<User?> GetByIdAsync(Guid id, CancellationToken ct = default)
             => await _context.Users.FindAsync([id], ct);
+
+        public async Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken ct = default)
+            => await _context.Users.ToListAsync(ct);
     }
 }

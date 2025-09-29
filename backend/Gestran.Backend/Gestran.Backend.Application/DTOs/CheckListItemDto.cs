@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Gestran.Backend.Application.DTOs
 {
-    public record CheckListItemDto (
-            Guid ItemTypeId,
-            string ItemTypeName,
-            bool isChecked,
-            string? Comments
-        );
+    public record CheckListItemDto(
+        Guid Id,
+        Guid ItemTypeId,
+        string ItemTypeName,
+        bool? IsChecked,
+        string? Comments
+    );
 
 }

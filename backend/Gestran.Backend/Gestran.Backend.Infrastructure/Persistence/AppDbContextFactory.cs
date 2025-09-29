@@ -13,7 +13,7 @@ namespace Gestran.Backend.Infrastructure.Persistence
         public AppDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlServer("Server=localhost;Database=GestranDb;User Id=sa;Password=1234;TrustServerCertificate=True;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=GestranDB;User Id=sa;Password=1234;Integrated Security=True;TrustServerCertificate=True;Encrypt=False;");
             return new AppDbContext(optionsBuilder.Options);
         }
     }

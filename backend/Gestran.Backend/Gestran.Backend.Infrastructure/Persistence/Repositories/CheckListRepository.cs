@@ -15,11 +15,19 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
 
         public CheckListRepository(AppDbContext context) => _context = context;
 
-
+        public async Task<IEnumerable<CheckList>> GetAllCheckListsAsync(CancellationToken ct = default)
+        {
+            return await _context.CheckLists
+                .Include(cl => cl.CheckListItems)
+                .ThenInclude(i => i.ItemType)
+                .Include(cl => cl.ExecutedBy)
+                .Include(cl => cl.Collection)
+                .ToListAsync();
+        }
 
         public async Task AddNewCheckListAsync(CheckList checklist, CancellationToken ct = default)
         {
-            _context.CheckLists.Add(checklist);
+            await _context.CheckLists.AddAsync(checklist);
             await _context.SaveChangesAsync(ct);
         }
 
@@ -40,10 +48,32 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
                         .FirstOrDefaultAsync(c => c.Id == id, ct);
         }
 
-        public async Task UpdateChecklistAsync(CheckList checklist, CancellationToken ct = default)
+        public async Task UpdateCheckListAsync(CheckList checklist, CancellationToken ct = default)
         {
             _context.CheckLists.Update(checklist);
             await _context.SaveChangesAsync(ct);
+        }
+
+        /// <summary>
+        /// retorna todas as checklists (inclusive já aprovadas/fechadas)
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<CheckList>> GetAllCheckListsHistoryAsync(CancellationToken ct = default)
+        {
+            return await _context.CheckLists
+                .AsNoTracking()
+                .Include(cl => cl.CheckListItems)
+                .ThenInclude(i => i.ItemType)
+                .Include(cl => cl.ExecutedBy)
+                .Include(cl => cl.Collection)
+                .OrderByDescending(cl => cl.CreationDate)
+                .ToListAsync();
+        }
+
+        public async Task RemoveCheckListAsync(CheckList checkListEntity, CancellationToken ct = default)
+        {
+            _context.CheckLists.Remove(checkListEntity);
+            await _context.SaveChangesAsync();
         }
     }
 }
