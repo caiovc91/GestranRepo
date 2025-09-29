@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gestran.Backend.Application.DTOs
 {
-    public record CheckListItemCreateDto(Guid? ItemTypeId, string? ItemTypeName, bool? IsChecked, string? Comments);
+    public record CheckListItemCreateDto(Guid ItemTypeId, string? ItemTypeName, bool? IsChecked, string? Comments);
     public record CheckListCreateDto(string CheckListName, Guid? CollectionId, string? GeneralComments, List<CheckListItemCreateDto> CheckListItems);
 
     public record CheckListItemUpdateDto(Guid Id, bool? IsChecked, string? Comments);

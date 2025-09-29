@@ -88,17 +88,20 @@ namespace Gestran.Backend.Infrastructure.Persistence
                 entity.Property(e => e.Comments).IsRequired(false);
                 entity.Property<bool?>(e => e.IsChecked).IsRequired(false);
 
-                entity.HasOne(e => e.ItemType)
-                      .WithMany(t => t.CheckListItems)
-                      .HasForeignKey(e => e.ItemTypeId)
-                      .OnDelete(DeleteBehavior.Restrict);
+                entity.HasOne<CheckList>()
+                              .WithMany(c => c.CheckListItems)
+                              .HasForeignKey(i => i.CheckListId)
+                              .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<CheckListItemType>(entity =>
             {
                 entity.ToTable("CheckListItemTypes");
                 entity.HasKey(e => e.Id);
+
                 entity.Property(e => e.TypeName).IsRequired();
+                entity.Property(e => e.Description).IsRequired(false);
+                entity.Property(e => e.IsEnabled).IsRequired();
             });
         }
     }

@@ -12,7 +12,6 @@ namespace Gestran.Backend.Domain.Entities
         public Guid CheckListId { get; set; }
         public Guid ItemTypeId { get; set; }
         public string ItemTypeName { get; set; } = string.Empty;
-        public CheckListItemType? ItemType { get; set; } = null;
         public bool? IsChecked { get; set; }
         public string? Comments { get; set; }
 

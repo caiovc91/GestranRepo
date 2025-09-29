@@ -524,8 +524,7 @@
         "properties": {
           "itemTypeId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "itemTypeName": {
             "type": "string",

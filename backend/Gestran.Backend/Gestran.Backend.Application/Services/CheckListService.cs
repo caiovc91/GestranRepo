@@ -15,7 +15,10 @@ namespace Gestran.Backend.Application.Services
         private readonly ICheckListRepository _repo;
         private readonly ICheckListItemTypeRepository _itemTypeRepo;
 
-        public CheckListService(ICheckListRepository repo) => _repo = repo;
+        public CheckListService(ICheckListRepository repo, ICheckListItemTypeRepository itemTypeRepo) {
+            _repo = repo;
+            _itemTypeRepo = itemTypeRepo;
+        }
         public async Task<IEnumerable<CheckListResponseDto>> GetAllCheckListsAsync(CancellationToken ct = default)
         {
             var list = await _repo.GetAllCheckListsAsync(ct);
@@ -58,21 +61,21 @@ namespace Gestran.Backend.Application.Services
 
             foreach (var itemDto in dto.CheckListItems ?? Enumerable.Empty<CheckListItemCreateDto>())
             {
-                if (!itemDto.ItemTypeId.HasValue || itemDto.ItemTypeId == Guid.Empty)
+                if (itemDto.ItemTypeId == Guid.Empty)
                     throw new InvalidOperationException("ItemTypeId is required and must be a valid GUID.");
 
-                var itemTypeId = itemDto.ItemTypeId.ToString().ToUpper();
+                
 
                 // Busca o tipo no banco
-                var type = await _itemTypeRepo.GetCheckListItemTypeAsync(Guid.Parse(itemTypeId), ct);
+                var type = await _itemTypeRepo.GetCheckListItemTypeAsync(itemDto.ItemTypeId, ct);
                 if (type == null)
-                    throw new InvalidOperationException($"ItemTypeId {itemDto.ItemTypeId.Value} does not exist in the database.");
+                    throw new InvalidOperationException($"ItemTypeId {itemDto.ItemTypeId} does not exist in the database.");
 
                 checklist.CheckListItems.Add(new CheckListItem
                 {
                     Id = Guid.NewGuid(),
                     CheckListId = checklist.Id,
-                    ItemTypeId = itemDto.ItemTypeId.Value,
+                    ItemTypeId = itemDto.ItemTypeId,
                     ItemTypeName = type.TypeName,
                     IsChecked = itemDto.IsChecked ?? false,
                     Comments = itemDto.Comments ?? string.Empty
@@ -216,7 +219,7 @@ namespace Gestran.Backend.Application.Services
                 c.CheckListItems.Select(i => new CheckListItemResponseDto(
                     i.Id,
                     i.ItemTypeId,
-                    i.ItemType?.TypeName,
+                    i.ItemTypeName,
                     i.IsChecked ?? false,
                     i.Comments
                 )).ToList()

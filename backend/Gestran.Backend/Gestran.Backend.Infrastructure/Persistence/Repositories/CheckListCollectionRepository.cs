@@ -31,7 +31,7 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
         {
            return await _context.CheckListCollections.Include(c => c.CheckLists)
                 .ThenInclude(cl => cl.CheckListItems)
-                .ThenInclude(cli => cli.ItemType)
+                .ThenInclude(cli => cli.ItemTypeName)
                 .FirstOrDefaultAsync(c => c.OwnerId == ownerId, ct);
         }
 
