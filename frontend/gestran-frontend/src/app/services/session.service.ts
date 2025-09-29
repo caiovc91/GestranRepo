@@ -1,19 +1,31 @@
+import { ApiService } from './api.service';
+import { User } from '../models/user.model';
+
 export class SessionService {
-  private static tokenKey = 'gestran_token';
+  private currentUser: User | null = null;
 
-  static setToken(token: string) {
-    localStorage.setItem(SessionService.tokenKey, token);
+  constructor(private api: ApiService) {}
+
+  async login(username: string, password: string) {
+    const user = await this.api.post<User>('/Auth/Login', { username, password });
+    this.currentUser = user;
+    localStorage.setItem('sessionUser', JSON.stringify(user));
+    return user;
   }
 
-  static getToken(): string | null {
-    return localStorage.getItem(SessionService.tokenKey);
+  logout() {
+    this.currentUser = null;
+    localStorage.removeItem('sessionUser');
   }
 
-  static clear() {
-    localStorage.removeItem(SessionService.tokenKey);
+  getUser(): User | null {
+    if (!this.currentUser) {
+      const stored = localStorage.getItem('sessionUser');
+      if (stored) this.currentUser = JSON.parse(stored);
+    }
+    return this.currentUser;
   }
 
-  static isLoggedIn(): boolean {
-    return !!SessionService.getToken();
-  }
+  isOperator() { return this.getUser()?.role === 'Operator'; }
+  isSupervisor() { return this.getUser()?.role === 'Supervisor'; }
 }

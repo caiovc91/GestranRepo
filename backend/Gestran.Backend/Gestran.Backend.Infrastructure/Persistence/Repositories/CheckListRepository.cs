@@ -19,7 +19,6 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
         {
             return await _context.CheckLists
                 .Include(cl => cl.CheckListItems)
-                .ThenInclude(i => i.ItemTypeName)
                 .Include(cl => cl.ExecutedBy)
                 .Include(cl => cl.Collection)
                 .ToListAsync();
@@ -44,7 +43,6 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
         {
             return await _context.CheckLists
                         .Include(c => c.CheckListItems)
-                        .ThenInclude(i => i.ItemTypeName)
                         .FirstOrDefaultAsync(c => c.Id == id, ct);
         }
 
@@ -63,7 +61,6 @@ namespace Gestran.Backend.Infrastructure.Persistence.Repositories
             return await _context.CheckLists
                 .AsNoTracking()
                 .Include(cl => cl.CheckListItems)
-                .ThenInclude(i => i.ItemTypeName)
                 .Include(cl => cl.ExecutedBy)
                 .Include(cl => cl.Collection)
                 .OrderByDescending(cl => cl.CreationDate)

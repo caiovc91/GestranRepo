@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChecklistExecutionPage } from './pages/checklist-execution.page';
+import { ApprovalPage } from './pages/approval.page';
+import { HeaderComponent } from './components/header.component';
 
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+@NgModule({
+  declarations: [
+    ChecklistExecutionPage,
+    ApprovalPage,
+    HeaderComponent,
+    // ... outros componentes
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(AppRoutes),
+    HttpClientModule,
+    FormsModule
+  ],
+  bootstrap: [AppComponent]
 })
-export class App {
-  protected readonly title = signal('gestran-frontend');
-}
+export class AppModule {}

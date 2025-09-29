@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gestran.Backend.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d5a7aed9319327bc1bad1d244f0c5d9d9c37e02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9490b68d9c920657d5b0f63c7ef2bb215dfabba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gestran.Backend.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gestran.Backend.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
